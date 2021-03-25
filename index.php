@@ -54,7 +54,7 @@ if(isset($_POST['submitted'])) {
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
 <head> 
-<title>HTML5/CSS Ajax Contact Form with jQuery</title>
+<title>HTML/CSS Ajax Contact Form with jQuery</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
@@ -79,7 +79,7 @@ if(isset($_POST['submitted'])) {
                         <p class="alert">Error submitting the form</p>
                     <?php } ?>
 				
-					<form id="contact-us" action="contact.php" method="post">
+					<form id="contact-us" action="mail.php" method="post">
 						<div class="formblock">
 							<label class="screen-reader-text">Name</label>
 							<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="txt requiredField" placeholder="Name:" />
